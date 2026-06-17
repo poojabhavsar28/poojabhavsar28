@@ -118,16 +118,6 @@ Built a multi-tenant ConversationalRetrievalChain RAG pipeline (LangChain, Chrom
 </td>
 <td width="50%" valign="top">
 
-### Plant Disease Detection CNN
-**98.5% accuracy · PyTorch from scratch**
-
-CNN trained on 10K+ augmented images over 50 epochs; +12% over baseline via focal loss and OpenCV preprocessing (histogram equalization, edge detection). Streamlit diagnostic dashboard.
-
-`PyTorch` `OpenCV` `Streamlit` `Computer Vision`
-
-[→ View repo](https://github.com/poojabhavsar28/plant-disease-detection)
-
-</td>
 </tr>
 </table>
 
