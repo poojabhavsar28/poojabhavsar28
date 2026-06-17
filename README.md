@@ -28,8 +28,8 @@
 
 - Architected a production **Agentic AI IVR platform** — Asterisk, RTP gateway, MCP Server, LangChain-based LLM responses, STT/TTS, multi-speaker diarization, fine-tuned for low-resource Indian languages
 - Built a **real-time RAG + sentiment pipeline** serving 1,000+ daily interactions with sub-second retrieval
-- Designed ML classification systems processing **50,000+ DNS log entries/session** for cyber threat detection (ISRO Space Applications Centre)
-- Open-sourced ML projects hitting **95%** (DGA domain detection) and **98.5%** (plant disease CNN) accuracy
+- Designed DL based LSTM trained systems processing **50,000+ DNS log entries/session** for cyber threat detection (ISRO Space Applications Centre)
+- Open-sourced ML projects hitting **98.4%** (DGA domain detection) and **98.5%** (plant disease CNN) accuracy
 
 <br clear="right"/>
 
@@ -96,11 +96,24 @@ flowchart LR
 ### DGA Domain Detection
 **95% accuracy · 100K+ DNS queries · 1,000 req/sec**
 
-Random Forest & Gradient Boosting on real-time Zeek network data, streamed via Apache Kafka and served through FastAPI + Docker on AWS.
+LSTM based trained model on real-time Zeek network data, streamed via Apache Kafka and served through FastAPI + Docker on AWS.
 
-`Python` `Scikit-learn` `Kafka` `FastAPI` `Docker` `AWS`
+`Python` `Tensorflow` `Kafka` `FastAPI` `Docker` `AWS`
 
 [→ View repo](https://github.com/poojabhavsar28/dga-domain-detection)
+
+</td>
+<td width="50%" valign="top">
+
+### RAG application
+**95% accuracy · 100K+ DNS queries · 1,000 req/sec**
+
+Built a multi-tenant ConversationalRetrievalChain RAG pipeline (LangChain, ChromaDB, Ollama embeddings) with per-tenant vector stores and MMR retrieval 
+, serving 1,000+ daily Q&A interactions with integrated NLP sentiment analysis on post-call transcripts.
+
+`Chainlit` `Langchain` `Chroma` `FastAPI` `RAG` `NLP`
+
+[→ View repo](https://github.com/poojabhavsar28/RAG-Chatbot-)
 
 </td>
 <td width="50%" valign="top">
@@ -150,7 +163,7 @@ CNN trained on 10K+ augmented images over 50 epochs; +12% over baseline via foca
 | Domain | Expertise |
 |---|---|
 | **GenAI / LLMs** | RAG · Agentic AI · LangGraph multi-agent orchestration · LLM fine-tuning · MCP Server · prompt engineering |
-| **ML / DL** | Classification, CNNs, model evaluation, focal loss, hyperparameter optimization |
+| **ML / DL** | Classification, CNNs, model evaluation, focal loss, hyperparameter optimization, LSTM|
 | **NLP** | Sentiment analysis, STT/TTS, multi-speaker diarization, low-resource language fine-tuning |
 | **Infra / MLOps** | FastAPI · Docker · AWS · Apache Kafka · real-time streaming pipelines |
 | **Languages** | Python · SQL |
